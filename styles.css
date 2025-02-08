@@ -9,7 +9,10 @@
 body {
     color: #000000;
     font-size: larger;
-    background: url('BG1.jpg') no-repeat center center;
+    
+    background: linear-gradient(to right, #ffffff, #9ee7ff); /* Gradient from pink to orange */
+
+      
     background-size: cover;
     line-height: 1.6;
     padding: 20px;
