@@ -10,7 +10,8 @@ body {
     color: #000000;
     font-size: larger;
     /* Background image set on the body */
-    background: url('BG1.jpg') no-repeat center center/cover;
+    background: url('BG1.jpg') no-repeat center center; /* Remove fixed */
+    background-size: cover; /* Keep cover */
     line-height: 1.6;
     padding: 20px;
     animation: fadeIn 1s ease-out;
@@ -24,153 +25,31 @@ body {
     padding: 30px 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background: url('BG8.jpg') no-repeat center center;
-    background-size: cover; /* Ensures the image fully covers */
-    backface-visibility: initial;
-    background-attachment: fixed; /* Keeps it attached to the viewport */
-    width: 100%; /* Makes sure it spans the full width */
-    height: 100px; /* Adjust height based on your navbar */
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background: transparent;
-    color: #3594f2;
-}
-
-.logo-img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-.logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
-    color: #272727;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin-left: 400px;
-}
-
-.nav-links li {
-    margin-left: 50px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #404040;
-    font-weight: 900;
-    font-size: medium;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #007bff;
-}
-
-/* Sections */
-.section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
-}
-
-/* Home Section Specific Styles */
-#home {
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)); /* Gradient effect */
-    text-align: left;
-    padding: 80px 100px;
-    color: rgb(28, 28, 28);
-}
-
-#home h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-#home p {
-    font-size: 1.5rem;
-    font-weight: 200;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #000000;
-}
-
-#home .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #007bff;
-    color: rgb(146, 144, 144);
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
-}
-
-#home .cta-button:hover {
-    background: #0056b3;
-}
-
-/* About and Contact Sections (Original CSS - No Changes) */
-.team-member {
-    border-left: 5px solid #007bff;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    background: #b7daff;
-    max-width: 500px;
-}
-
-.team-member h4 {
-    font-size: 1.2rem;
-    color: #222;
-}
-
-.team-member p {
-    font-size: 1rem;
-    color: #555;
-}
-
-#contact form {
-    max-width: 500px;
-    margin-top: 20px;
-}
-
-#contact label {
-    font-size: 1rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact input,
-#contact textarea {
+    background-size: cover; /* Keep cover */
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-size: 1rem;
+    height: 100px;
 }
 
-#contact input[type="submit"] {
-    background: #858585;
-    color: rgb(0, 0, 0);
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 1rem;
-}
+/* ... (Rest of your CSS - logo, nav links, sections, etc.) ... */
 
-#contact input[type="submit"]:hover {
-    background: #0056b3;
+/* Responsive (Important Changes Here) */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        height: auto; /* Allow navbar height to adjust */
+    }
+
+    /* ... other responsive styles ... */
+
+    body {
+        background-size: cover; /* Ensure BG covers on mobile */
+    }
+
+    .navbar {
+        background-size: cover;  /* Ensure BG covers on mobile */
+    }
 }
 
 /* Animation for fade-in effect */
@@ -180,87 +59,5 @@ body {
     }
     100% {
         opacity: 1;
-    }
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 20px;
-    }
-
-    .nav-links {
-        margin-left: 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    #home {
-        padding: 60px 50px;
-    }
-
-    #home h2 {
-        font-size: 2.2rem;
-    }
-
-    #home p {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    #home {
-        padding: 50px 20px;
-    }
-
-    #home h2 {
-        font-size: 1.8rem;
-    }
-
-    #home p {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 1.8rem;
-    }
-
-    .nav-links {
-        margin-left: 0;
-    }
-
-    .nav-links li {
-        margin: 8px 0;
-    }
-
-    #home {
-        padding: 40px 20px;
-    }
-
-    #home h2 {
-        font-size: 1.6rem;
-    }
-
-    #home p {
-        font-size: 1rem;
     }
 }
