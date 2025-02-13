@@ -3,33 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelabria - IT Services & Consulting</title>
+    <title>Zelabria - Web Development & Consulting</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo-container">
-            <img src="logo.png" alt="Zelabria Logo" class="logo-img">
-            <h1 class="logo">ZELABRIA</h1>
+        <div class="container">
+            <div class="nav-content">
+                <!-- Add logo image before Zelabria text -->
+                <a href="index.html" class="logo">
+                    <img src="logo.jpg" alt="Logo" class="logo-img"> <!-- Add the logo image here -->
+                    <span>Zelabria</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
     </nav>
 
-    <section id="home" class="section">
-        <h2>IT Services & Consulting</h2>
-        <p>We specialize in Web Design, Maintenance, and more. Our team is dedicated to empowering businesses with cutting-edge IT solutions that drive growth and efficiency. Whether you're looking for a new website, ongoing support, or strategic IT consulting, we provide innovative solutions tailored to your needs.</p>
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Building Digital Excellence</h1>
+                    <p>Your trusted partner in web development, maintenance, and consulting</p>
+                </div>
+            </div>
+        </div>
 
-        <p>Our web development services include custom-designed, responsive websites that adapt seamlessly across devices. We create visually appealing and user-friendly interfaces, ensuring that your online presence stands out. For businesses looking to expand online, we offer e-commerce solutions and SEO optimization to maximize visibility and customer reach.</p>
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i data-lucide="code-2"></i>
+                        <h3>Web Development</h3>
+                        <p>Custom web solutions built with modern technologies and best practices</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="server"></i>
+                        <h3>Maintenance</h3>
+                        <p>Keeping your web applications running smoothly and securely</p>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="settings"></i>
+                        <h3>Consulting</h3>
+                        <p>Expert advice on technology solutions and digital strategy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>Beyond development, our IT consulting services help businesses make informed technology decisions. We provide technology assessments, strategic IT planning, and cloud solutions to enhance operational efficiency. Partner with us for expert guidance and future-proof IT strategies that align with your business goals.</p>
+        <!-- Why Choose Us Section -->
+        <section class="why-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <div class="why-us-grid">
+                    <div class="why-us-card">
+                        <i data-lucide="users"></i>
+                        <div>
+                            <h3>Expert Team</h3>
+                            <p>Our team of skilled developers and consultants brings years of industry experience</p>
+                        </div>
+                    </div>
+                    <div class="why-us-card">
+                        <i data-lucide="settings"></i>
+                        <div>
+                            <h3>Custom Solutions</h3>
+                            <p>Tailored approaches to meet your specific business needs and goals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <p>Contact us today to discuss your IT needs!</p>
-    </section>
-    
-    <script src="script.js"></script> 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Zelabria</h3>
+                    <p>Web Development • Maintenance • Consulting</p>
+                </div>
+                <div class="social-links">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/zelabria/" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zelabria?igsh=NnEzbmtyNHB2eHo1" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="mailto:contact.zelabria@gmail.com">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Zelabria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Update year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

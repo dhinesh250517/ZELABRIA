@@ -3,48 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Zelabria</title>
+    <title>About - Zelabria</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo-container">
-            <img src="logo.png" alt="Zelabria Logo" class="logo-img">
-            <h1 class="logo">ZELABRIA</h1>
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="logo.jpg" alt="Logo" class="logo-img">
+                    <span>Zelabria</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
     </nav>
 
-    <section id="about" class="section">
-        <h2>About Zelabria</h2>
-        <p>We are a team of dedicated IT professionals passionate about helping businesses succeed through technology.</p>
+    <main>
+        <div class="container">
+            <section class="about-section">
+                <h1>About Us</h1>
+                
+                <!-- Leadership Section -->
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <img src="p2.jpg" alt="Dhinesh S" class="photo1-img">
+                        
+                        <h2>Dhinesh S</h2>
+                        <p class="role">Founder & CEO</p>
+                        <p class="bio">
+                            Student at Saveetha Engineering College with a passion for technology and innovation.
+                            Leading Zelabria's vision and strategic direction.
+                        </p>
+                    </div>
+                    
+                    <div class="leader-card">
+                        <img src="p1.jpg" alt="Aravinth N" class="photo2-img">
+                        
+                        <h2>Aravinth N</h2>
+                        <p class="role">Co-founder and CEO</p>
+                        <p class="bio">
+                            Student at Saveetha Engineering College specializing in web technologies.
+                            Driving technical excellence and innovation at Zelabria.
+                        </p>
+                    </div>
+                </div>
 
-        <h3>Our Leadership</h3>
-        <div class="team-member">
-            <h4>Dhinesh S</h4>
-            <p>Founder & CEO</p>
-        </div>
-        <div class="team-member">
-            <h4>Aravinth N</h4>
-            <p>Co-Founder & CEO</p>
-        </div>
+                <!-- Company Story -->
+                <div class="story-section">
+                    <h2>Our Story</h2>
+                    <p>
+                        Founded by two passionate students from Saveetha Engineering College,
+                        Zelabria was born from the vision to provide exceptional web development
+                        services while pursuing academic excellence.
+                    </p>
+                    <p>
+                        Today, we combine our academic knowledge with practical experience to
+                        deliver innovative solutions for businesses of all sizes. Our commitment
+                        to learning and growth ensures we stay at the forefront of technology.
+                    </p>
+                </div>
 
-        <h3>Our Team</h3>
-        <div class="team-member">
-            <h4>Member 1</h4>
-            <p>Web Developer</p>
+                <!-- Values -->
+                <div class="values-section">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h3>Innovation</h3>
+                            <p>Pushing boundaries and embracing new technologies</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Excellence</h3>
+                            <p>Delivering quality in everything we do</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Growth</h3>
+                            <p>Continuous learning and improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="team-member">
-            <h4>Member 2</h4>
-            <p>IT Consultant</p>
-        </div>
+    </main>
 
-        <p>We are committed to providing high-quality IT solutions tailored to your specific needs.  We believe in building long-term relationships with our clients based on trust and mutual success.</p>
-    </section>
-    <script src="script.js"></script> 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Zelabria</h3>
+                    <p>Web Development • Maintenance • Consulting</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="mailto:contact@zelabria.com">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Zelabria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
