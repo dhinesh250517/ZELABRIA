@@ -160,20 +160,15 @@ main {
     margin-bottom: 3rem;
 }
 
-/* Leadership Grid */
 .leadership-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     margin-bottom: 4rem;
 }
 
 .leader-card {
     text-align: center;
-    background-color: #f9fafb;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .leader-card img {
@@ -184,47 +179,11 @@ main {
     margin-bottom: 1rem;
 }
 
-.leader-card h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
 .leader-card .role {
     color: #2563eb;
-    font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.leader-card .bio {
-    font-size: 1rem;
-    color: #4b5563;
-}
-
-/* For team members with no photo */
-.leader-card.no-photo img {
-    display: none; /* Hide image for team members without photos */
-}
-
-.leader-card.no-photo h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.leader-card.no-photo .role {
-    font-size: 1.125rem;
-    color: #2563eb;
-    margin-bottom: 1rem;
-}
-
-.leader-card.no-photo .bio {
-    font-size: 1rem;
-    color: #4b5563;
-    margin-top: 1rem;
-}
-
-/* Our Story Section */
 .story-section {
     background-color: #f9fafb;
     padding: 2rem;
@@ -235,18 +194,6 @@ main {
 .story-section h2 {
     font-size: 1.875rem;
     margin-bottom: 1.5rem;
-}
-
-.story-section p {
-    font-size: 1rem;
-    color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-/* Our Values Section */
-.values-section {
-    padding: 4rem 0;
 }
 
 .values-section h2 {
@@ -264,19 +211,6 @@ main {
 .value-card {
     text-align: center;
     padding: 1.5rem;
-    background-color: #f9fafb;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.value-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.value-card p {
-    font-size: 1rem;
-    color: #4b5563;
 }
 
 /* Contact Page */
