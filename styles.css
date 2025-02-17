@@ -170,10 +170,10 @@ main {
 
 .leader-card {
     text-align: center;
-    background-color: #f9fafb; /* Light background for the cards */
+    background-color: #f9fafb;
     padding: 2rem;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .leader-card img {
@@ -201,7 +201,7 @@ main {
     color: #4b5563;
 }
 
-/* No photo leader styling */
+/* For team members with no photo */
 .leader-card.no-photo img {
     display: none; /* Hide image for team members without photos */
 }
@@ -266,7 +266,7 @@ main {
     padding: 1.5rem;
     background-color: #f9fafb;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .value-card h3 {
@@ -278,6 +278,7 @@ main {
     font-size: 1rem;
     color: #4b5563;
 }
+
 /* Contact Page */
 .contact-section {
     padding: 4rem 0;
