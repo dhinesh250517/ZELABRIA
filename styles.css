@@ -162,7 +162,7 @@ main {
 
 .leadership-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Default: 1 member per row on small screens */
     gap: 3rem;
     margin-bottom: 4rem;
 }
@@ -184,6 +184,14 @@ main {
     margin-bottom: 1rem;
 }
 
+/* For larger screens (laptops and above) */
+@media (min-width: 769px) {
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on larger screens */
+    }
+}
+
+/* Story Section */
 .story-section {
     background-color: #f9fafb;
     padding: 2rem;
@@ -196,6 +204,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
+/* Values Section */
 .values-section h2 {
     text-align: center;
     font-size: 1.875rem;
@@ -212,6 +221,7 @@ main {
     text-align: center;
     padding: 1.5rem;
 }
+
 
 /* Contact Page */
 .contact-section {
