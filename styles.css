@@ -406,3 +406,61 @@ button[type="submit"]:hover {
     margin-right: 10px;  /* Add space between logo and text */
     vertical-align: middle; /* Align the logo vertically */
 }
+/* Team Page Styles */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.team-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.team-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card h3 {
+    font-size: 2rem;
+    color: #0073e6;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.team-card .designation {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+
