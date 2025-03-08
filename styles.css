@@ -26,7 +26,7 @@ main {
 
 /* Navigation */
 .navbar {
-    background-color: white;
+    background-color: rgb(65, 65, 65);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,7 +41,7 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #1a1a1a;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.25rem;
 }
@@ -54,11 +54,12 @@ main {
 .nav-links {
     display: flex;
     gap: 2rem;
+    
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #4b5563;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.2s;
 }
