@@ -1,125 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelabria - Web Development & Consulting</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="icon" href="logo.jpg" />
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <!-- Add logo image before Zelabria text -->
-                <a href="index.html" class="logo">
-                    <img src="logo.jpg" alt="Logo" class="logo-img"> <!-- Add the logo image here -->
-                    <span>Zelabria</span>
-                </a>
-                <div class="nav-links">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="team.html">Team</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zelabria - Innovative Software Solutions</title>
+    <meta name="description" content="Zelabria creates innovative software solutions and digital products that transform ideas into high-performance applications." />
+    <meta name="author" content="Zelabria" />
 
-    <main>
-        <!-- Hero Section -->
-        <div class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Building Digital Excellence</h1>
-                    <p>Your trusted partner in web development, maintenance, and consulting</p>
-                </div>
-            </div>
-        </div>
+    <meta property="og:title" content="Zelabria - Innovative Software Solutions" />
+    <meta property="og:description" content="Transforming ideas into high-performance software and applications that solve complex business challenges." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-        <!-- Services Section -->
-        <section class="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i data-lucide="code-2"></i>
-                        <h3>Web Development</h3>
-                        <p>Custom web solutions built with modern technologies and best practices</p>
-                    </div>
-                    <div class="service-card">
-                        <i data-lucide="server"></i>
-                        <h3>Maintenance</h3>
-                        <p>Keeping your web applications running smoothly and securely</p>
-                    </div>
-                    <div class="service-card">
-                        <i data-lucide="settings"></i>
-                        <h3>Consulting</h3>
-                        <p>Expert advice on technology solutions and digital strategy</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@zelabria" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@400;700&display=swap">
+  </head>
 
-        <!-- Why Choose Us Section -->
-        <section class="why-us">
-            <div class="container">
-                <h2>Why Choose Us</h2>
-                <div class="why-us-grid">
-                    <div class="why-us-card">
-                        <i data-lucide="users"></i>
-                        <div>
-                            <h3>Expert Team</h3>
-                            <p>Our team of skilled developers and consultants brings years of industry experience</p>
-                        </div>
-                    </div>
-                    <div class="why-us-card">
-                        <i data-lucide="settings"></i>
-                        <div>
-                            <h3>Custom Solutions</h3>
-                            <p>Tailored approaches to meet your specific business needs and goals</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Zelabria</h3>
-                    <p>Web Development • Maintenance • Consulting</p>
-                </div>
-                <div class="social-links">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/zelabria/" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/zelabria?igsh=NnEzbmtyNHB2eHo1" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="instagram"></i>
-                    </a>
-                    <a href="mailto:contact.zelabria@gmail.com">
-                        <i data-lucide="mail"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Zelabria. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-        
-        // Update year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
