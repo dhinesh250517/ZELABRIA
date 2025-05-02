@@ -43,25 +43,25 @@ const Services = () => {
                 
                 {[
                   {
-                    step: 1,
+                    step: 1  ,
                     icon: Lightbulb,
                     title: "Discovery",
                     description: "We start by understanding your business goals, challenges, and requirements through in-depth consultations."
                   },
                   {
-                    step: 2,
+                    step: 2  ,
                     icon: Layers,
                     title: "Planning",
                     description: "We create a comprehensive roadmap outlining the scope, timeline, resources, and deliverables for your project."
                   },
                   {
-                    step: 3,
+                    step: 3  ,
                     icon: Rocket,
                     title: "Execution",
                     description: "Our experienced team develops your solution using agile methodologies, with regular updates and feedback loops."
                   },
                   {
-                    step: 4,
+                    step: 4  ,
                     icon: Target,
                     title: "Delivery & Support",
                     description: "We deploy your solution and provide ongoing maintenance and support to ensure long-term success."
