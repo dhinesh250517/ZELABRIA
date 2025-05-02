@@ -49,7 +49,7 @@ export function ServiceSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
           <p className="text-muted-foreground mb-8">
-          உங்கள் தொழிலுக்கு தேவையான அனைத்து தொழில்நுட்ப சேவைகளையும் நாங்கள் வழங்குகிறோம்..
+          We create websites which improve your business goals
           </p>
           <Button 
             onClick={handleServicesClick}
