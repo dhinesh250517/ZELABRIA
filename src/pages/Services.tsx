@@ -18,7 +18,7 @@ const Services = () => {
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
               <p className="text-xl text-muted-foreground">
-                We offer a comprehensive range of technology solutions to help your business thrive in the digital era.
+                We offer a comprehensive range of technology solutions like websites,softwares,apps to help your business thrive in the digital era.
               </p>
             </div>
           </div>
@@ -33,7 +33,11 @@ const Services = () => {
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight mb-4">Our Process</h2>
               <p className="text-muted-foreground">
-                We follow a proven methodology that ensures successful outcomes for every project.
+              We create websites that look good and work well on all devices.
+    
+              </p>
+              <p className="text-muted-foreground">
+              From basic pages to full online systems, we build what your business needs.
               </p>
             </div>
             
