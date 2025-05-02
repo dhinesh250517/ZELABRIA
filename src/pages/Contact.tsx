@@ -69,14 +69,19 @@ const Contact = () => {
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight mb-4">Our Location</h2>
               <p className="text-muted-foreground">
-                Visit us at Saveetha Engineering collge Chennai, India.
+                Visit us at Saveetha Engineering college Chennai, India.
               </p>
             </div>
             
             <div className="max-w-5xl mx-auto h-96 rounded-xl overflow-hidden border border-border glass-card">
-              <div className="w-full h-full bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Map integration would be placed here</p>
-              </div>
+            <iframe
+              className="w-full h-full"
+              src="https://maps.app.goo.gl/cGgYd6XjfjQnnftS6"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+             />
+
             </div>
           </div>
         </section>
