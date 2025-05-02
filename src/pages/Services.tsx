@@ -33,12 +33,11 @@ const Services = () => {
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight mb-4">Our Process</h2>
               <p className="text-muted-foreground">
+              உங்கள் தொழிலுக்கு தேவையான அனைத்து தொழில்நுட்ப சேவைகளையும் நாங்கள் வழங்குகிறோம்.
               We create websites that look good and work well on all devices.
     
               </p>
-              <p className="text-muted-foreground">
-              From basic pages to full online systems, we build what your business needs.
-              </p>
+            
             </div>
             
             <div className="max-w-5xl mx-auto">
